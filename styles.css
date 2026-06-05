@@ -1,0 +1,65 @@
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.01em;
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+h1,
+h2,
+nav a {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.hero-bg {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(71, 85, 105, 0.2), transparent 40%),
+    radial-gradient(circle at 85% 15%, rgba(51, 65, 85, 0.24), transparent 36%),
+    linear-gradient(180deg, #12161c 0%, #1a2129 52%, #151b22 100%);
+}
+
+.hero-image-blend {
+  opacity: 0.88;
+  filter: saturate(0.92) contrast(0.96);
+  -webkit-mask-image: radial-gradient(ellipse 62% 62% at center, #000 32%, rgba(0, 0, 0, 0.74) 48%, rgba(0, 0, 0, 0.42) 64%, rgba(0, 0, 0, 0.18) 79%, rgba(0, 0, 0, 0.06) 90%, transparent 100%);
+  mask-image: radial-gradient(ellipse 62% 62% at center, #000 32%, rgba(0, 0, 0, 0.74) 48%, rgba(0, 0, 0, 0.42) 64%, rgba(0, 0, 0, 0.18) 79%, rgba(0, 0, 0, 0.06) 90%, transparent 100%);
+}
+
+.hero-image-glow {
+  position: relative;
+}
+
+.hero-image-glow::before {
+  content: "";
+  position: absolute;
+  inset: -6% -4%;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 50% 44%, rgba(203, 213, 225, 0.22), rgba(203, 213, 225, 0.1) 45%, transparent 72%),
+    radial-gradient(circle at 52% 68%, rgba(148, 163, 184, 0.18), transparent 66%);
+  filter: blur(28px);
+  pointer-events: none;
+}
+
+.hero-image-glow .hero-image-blend {
+  position: relative;
+  z-index: 1;
+}
+
+.tour-image-soft {
+  filter: saturate(0.98) contrast(0.96);
+  box-shadow: 0 28px 64px rgba(2, 6, 23, 0.72);
+  -webkit-mask-image: radial-gradient(ellipse 74% 74% at center, #000 18%, rgba(0, 0, 0, 0.84) 36%, rgba(0, 0, 0, 0.56) 56%, rgba(0, 0, 0, 0.3) 72%, rgba(0, 0, 0, 0.12) 86%, transparent 100%);
+  mask-image: radial-gradient(ellipse 74% 74% at center, #000 18%, rgba(0, 0, 0, 0.84) 36%, rgba(0, 0, 0, 0.56) 56%, rgba(0, 0, 0, 0.3) 72%, rgba(0, 0, 0, 0.12) 86%, transparent 100%);
+}
+
+.tour-image-glow::before {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(186, 230, 253, 0.45), rgba(186, 230, 253, 0.2) 44%, transparent 72%),
+    radial-gradient(circle at 52% 66%, rgba(125, 211, 252, 0.35), transparent 68%);
+  filter: blur(48px);
+}

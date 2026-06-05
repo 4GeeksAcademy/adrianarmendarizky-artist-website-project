@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | re:boot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <nav class="mx-auto w-full max-w-6xl px-6 py-5">
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="flex items-center">
+            <img src="Site%20Assets/reboot%20logo%20-02.png" alt="re:boot logo" class="h-10 w-auto" />
+          </a>
+          <button
+            type="button"
+            class="rounded-md border border-slate-700 p-2 text-slate-200 transition hover:border-cyan-300 hover:text-cyan-300 md:hidden"
+            data-nav-toggle
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm1 4a1 1 0 100 2h12a1 1 0 100-2H4z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <ul class="hidden items-center gap-6 text-sm font-semibold md:flex md:text-base" data-nav-menu>
+            <li><a class="transition hover:text-cyan-400" href="index.html">Home</a></li>
+            <li><a class="text-cyan-400" href="about.html">About</a></li>
+            <li><a class="transition hover:text-cyan-400" href="discography.html">Discography</a></li>
+            <li><a class="transition hover:text-cyan-400" href="tour-dates.html">Tour Dates</a></li>
+          </ul>
+        </div>
+        <ul class="mt-4 hidden flex-col gap-3 border-t border-slate-800 pt-4 text-sm font-semibold md:hidden" data-nav-mobile>
+          <li><a class="block transition hover:text-cyan-400" href="index.html">Home</a></li>
+          <li><a class="block text-cyan-400" href="about.html">About</a></li>
+          <li><a class="block transition hover:text-cyan-400" href="discography.html">Discography</a></li>
+          <li><a class="block transition hover:text-cyan-400" href="tour-dates.html">Tour Dates</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-bg py-16 md:py-20">
+        <div class="mx-auto flex w-full max-w-6xl flex-col items-center gap-10 px-6 md:flex-row md:gap-12">
+          <div class="w-full md:w-5/12">
+            <p class="text-xs font-bold uppercase tracking-[0.25em] text-cyan-300">About</p>
+            <h1 class="mt-4 text-4xl font-black leading-tight text-slate-100 sm:text-5xl lg:text-6xl">The Story Behind re:boot</h1>
+            <p class="mt-5 max-w-xl text-base text-slate-300 sm:text-lg">
+              For many people, recent years have offered time to rethink, redefine, and restart in various ways. This is especially true for producers Nikhil Prakash and Adrian Alexander.
+            </p>
+            <p class="mt-4 max-w-xl text-slate-300">
+              Having paved separate paths within the trance and progressive scene over the last decade, Adrian and Nikhil amassed impressive individual discographies, replete with club-minded melody-focused music. When the time came for party-goers to take a break from dance floors, however, that time away from the energy of live events brought these two producers to the same studio for a new project. Nikhil and Adrian channeled their senses of longing for laser-lit late nights in crowded warehouses, and began to craft a sound that was different from their usual uplifting affair. The music became darker and brooding in nature; the grooves evolved to be heavy and bruising. Their vision of warehouse-minded dance music had materialized from their forced time away from live music, and when live music returned in late 2021, the boys were ready for their fresh start. re:boot was born.
+            </p>
+            <p class="mt-4 max-w-xl text-slate-300">
+              Since launching the project, re:boot have racked up releases on Above &amp; Beyond's Anjunabeats and Armin van Buuren's A State Of Trance imprints. Their recent tour stops on the Anjunabeats Worldwide Tour and guest mix on Group Therapy Radio have offered a taste of what's in store for the act. With plenty more music to come in 2023 and beyond, Adrian and Nikhil are ready to hit the dance floor and show fans just what re:boot is all about.
+            </p>
+          </div>
+          <div class="hero-image-glow w-full md:w-7/12">
+            <img
+              src="Site%20Assets/reboot_0.png"
+              alt="re:boot portrait"
+              class="hero-image-blend h-auto max-h-[72vh] w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="border-t border-slate-800 bg-slate-950/80">
+      <div class="mx-auto w-full max-w-6xl px-6 py-6 text-center text-sm text-slate-400">
+        Copyright 2020 Adrian Armendariz. All rights reserved.
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

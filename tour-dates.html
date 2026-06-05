@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Dates | re:boot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <nav class="mx-auto w-full max-w-6xl px-6 py-5">
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="flex items-center">
+            <img src="Site%20Assets/reboot%20logo%20-02.png" alt="re:boot logo" class="h-10 w-auto" />
+          </a>
+          <button
+            type="button"
+            class="rounded-md border border-slate-700 p-2 text-slate-200 transition hover:border-cyan-300 hover:text-cyan-300 md:hidden"
+            data-nav-toggle
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm1 4a1 1 0 100 2h12a1 1 0 100-2H4z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <ul class="hidden items-center gap-6 text-sm font-semibold md:flex md:text-base" data-nav-menu>
+            <li><a class="transition hover:text-cyan-400" href="index.html">Home</a></li>
+            <li><a class="transition hover:text-cyan-400" href="about.html">About</a></li>
+            <li><a class="transition hover:text-cyan-400" href="discography.html">Discography</a></li>
+            <li><a class="text-cyan-400" href="tour-dates.html">Tour Dates</a></li>
+          </ul>
+        </div>
+        <ul class="mt-4 hidden flex-col gap-3 border-t border-slate-800 pt-4 text-sm font-semibold md:hidden" data-nav-mobile>
+          <li><a class="block transition hover:text-cyan-400" href="index.html">Home</a></li>
+          <li><a class="block transition hover:text-cyan-400" href="about.html">About</a></li>
+          <li><a class="block transition hover:text-cyan-400" href="discography.html">Discography</a></li>
+          <li><a class="block text-cyan-400" href="tour-dates.html">Tour Dates</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="hero-bg">
+      <section class="py-16 md:py-20">
+        <div class="mx-auto flex w-full max-w-6xl flex-col items-center gap-10 px-6 md:flex-row md:gap-12">
+          <div class="w-full md:w-5/12">
+            <p class="text-xs font-bold uppercase tracking-[0.25em] text-cyan-300">Tour Dates</p>
+            <h1 class="mt-4 text-5xl font-black leading-tight md:text-7xl">Catch re:boot Live</h1>
+            <p class="mt-5 max-w-2xl text-lg text-slate-300 md:text-xl">
+              Upcoming performances, festival appearances, and intimate club nights. Tickets available exclusive through our partner, <a href="https://dice.fm/" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline transition hover:text-cyan-200">Dice</a>.
+            </p>
+          </div>
+          <div class="hero-image-glow tour-image-glow w-full md:w-7/12">
+            <img
+              src="Site%20Assets/reboot_4.jpg"
+              alt="re:boot live visual"
+              class="hero-image-blend tour-image-soft h-auto max-h-[72vh] w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto w-full max-w-6xl px-6 pb-16">
+        <div class="overflow-hidden rounded-2xl border border-slate-800">
+          <div class="grid grid-cols-1 divide-y divide-slate-800 md:grid-cols-3 md:divide-x md:divide-y-0">
+            <div class="bg-slate-900/60 p-6">
+              <p class="text-sm text-cyan-300">06 JUL</p>
+              <h2 class="mt-2 text-xl font-bold">Barcelona, ES</h2>
+              <p class="mt-2 text-slate-300">Sala Prisma</p>
+            </div>
+            <div class="bg-slate-900/60 p-6">
+              <p class="text-sm text-cyan-300">18 JUL</p>
+              <h2 class="mt-2 text-xl font-bold">Madrid, ES</h2>
+              <p class="mt-2 text-slate-300">Lumen Hall</p>
+            </div>
+            <div class="bg-slate-900/60 p-6">
+              <p class="text-sm text-cyan-300">02 AUG</p>
+              <h2 class="mt-2 text-xl font-bold">Lisbon, PT</h2>
+              <p class="mt-2 text-slate-300">Nova Frequency</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-slate-800 bg-slate-950/80">
+      <div class="mx-auto w-full max-w-6xl px-6 py-6 text-center text-sm text-slate-400">
+        Copyright 2020 Adrian Armendariz. All rights reserved.
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

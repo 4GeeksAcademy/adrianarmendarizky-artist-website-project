@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | re:boot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <nav class="mx-auto w-full max-w-6xl px-6 py-5">
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="flex items-center">
+            <img src="Site%20Assets/reboot%20logo%20-02.png" alt="re:boot logo" class="h-10 w-auto" />
+          </a>
+          <button
+            type="button"
+            class="rounded-md border border-slate-700 p-2 text-slate-200 transition hover:border-cyan-300 hover:text-cyan-300 md:hidden"
+            data-nav-toggle
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm1 4a1 1 0 100 2h12a1 1 0 100-2H4z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <ul class="hidden items-center gap-6 text-sm font-semibold md:flex md:text-base" data-nav-menu>
+            <li><a class="transition hover:text-cyan-400" href="index.html">Home</a></li>
+            <li><a class="transition hover:text-cyan-400" href="about.html">About</a></li>
+            <li><a class="transition hover:text-cyan-400" href="discography.html">Discography</a></li>
+            <li><a class="transition hover:text-cyan-400" href="tour-dates.html">Tour Dates</a></li>
+          </ul>
+        </div>
+        <ul class="mt-4 hidden flex-col gap-3 border-t border-slate-800 pt-4 text-sm font-semibold md:hidden" data-nav-mobile>
+          <li><a class="block transition hover:text-cyan-400" href="index.html">Home</a></li>
+          <li><a class="block transition hover:text-cyan-400" href="about.html">About</a></li>
+          <li><a class="block transition hover:text-cyan-400" href="discography.html">Discography</a></li>
+          <li><a class="block transition hover:text-cyan-400" href="tour-dates.html">Tour Dates</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="hero-bg">
+      <section class="mx-auto flex min-h-[80vh] w-full max-w-6xl flex-col items-start justify-center gap-6 px-6 py-20">
+        <p class="text-xs font-bold uppercase tracking-[0.25em] text-cyan-300">Contact</p>
+        <h1 class="max-w-3xl text-5xl font-black leading-tight md:text-7xl">Bookings and Collaborations</h1>
+        <p class="max-w-2xl text-lg text-slate-300 md:text-xl">
+          Reach out for live bookings, press requests, and creative collaborations.
+        </p>
+      </section>
+
+      <section class="mx-auto grid w-full max-w-6xl gap-6 px-6 pb-16 md:grid-cols-2">
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+          <h2 class="text-2xl font-bold">Management</h2>
+          <p class="mt-3 text-slate-300">booking@rebootmusic.com</p>
+          <p class="mt-1 text-slate-400">For tours, festivals, and venue bookings.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+          <h2 class="text-2xl font-bold">Press</h2>
+          <p class="mt-3 text-slate-300">press@rebootmusic.com</p>
+          <p class="mt-1 text-slate-400">For interviews, assets, and editorial requests.</p>
+        </article>
+      </section>
+    </main>
+    <footer class="border-t border-slate-800 bg-slate-950/80">
+      <div class="mx-auto w-full max-w-6xl px-6 py-6 text-center text-sm text-slate-400">
+        Copyright 2020 Adrian Armendariz. All rights reserved.
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

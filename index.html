@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>re:boot | Artist Website</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+		<header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+			<nav class="mx-auto w-full max-w-6xl px-6 py-5">
+				<div class="flex items-center justify-between">
+					<a href="index.html" class="flex items-center">
+						<img src="Site%20Assets/reboot%20logo%20-02.png" alt="re:boot logo" class="h-10 w-auto" />
+					</a>
+					<button
+						type="button"
+						class="rounded-md border border-slate-700 p-2 text-slate-200 transition hover:border-cyan-300 hover:text-cyan-300 md:hidden"
+						data-nav-toggle
+						aria-label="Toggle navigation"
+						aria-expanded="false"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+							<path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm1 4a1 1 0 100 2h12a1 1 0 100-2H4z" clip-rule="evenodd" />
+						</svg>
+					</button>
+					<ul class="hidden items-center gap-6 text-sm font-semibold md:flex md:text-base" data-nav-menu>
+						<li><a class="text-cyan-400" href="index.html">Home</a></li>
+						<li><a class="transition hover:text-cyan-400" href="about.html">About</a></li>
+						<li><a class="transition hover:text-cyan-400" href="discography.html">Discography</a></li>
+						<li><a class="transition hover:text-cyan-400" href="tour-dates.html">Tour Dates</a></li>
+					</ul>
+				</div>
+				<ul class="mt-4 hidden flex-col gap-3 border-t border-slate-800 pt-4 text-sm font-semibold md:hidden" data-nav-mobile>
+					<li><a class="block text-cyan-400" href="index.html">Home</a></li>
+					<li><a class="block transition hover:text-cyan-400" href="about.html">About</a></li>
+					<li><a class="block transition hover:text-cyan-400" href="discography.html">Discography</a></li>
+					<li><a class="block transition hover:text-cyan-400" href="tour-dates.html">Tour Dates</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero-bg">
+				<div class="mx-auto flex w-full max-w-6xl flex-col items-center gap-8 px-6 md:flex-row md:gap-10">
+					<div class="w-full md:w-5/12">
+						<h1 class="text-left text-4xl font-black leading-tight text-slate-100 sm:text-5xl lg:text-6xl">Mainroom techno for the masses.</h1>
+					</div>
+					<div class="hero-image-glow w-full md:w-7/12">
+						<img
+							src="Site%20Assets/reboot_1.jpg"
+							alt="re:boot promotional visual"
+							class="hero-image-blend h-auto max-h-[72vh] w-full object-cover"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<section class="mx-auto grid w-full max-w-6xl gap-6 px-6 py-16 md:grid-cols-3">
+				<article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+					<p class="text-xs uppercase tracking-[0.2em] text-cyan-300">Latest Release</p>
+					<h2 class="mt-3 text-2xl font-bold">PM_AM</h2>
+					<div class="mt-3 overflow-hidden rounded-xl">
+						<iframe
+							src="https://www.youtube.com/embed/NMZ-PH2CBsg"
+							title="PM_AM - YouTube video player"
+							class="h-52 w-full"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen
+						></iframe>
+					</div>
+				</article>
+				<article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+					<p class="text-xs uppercase tracking-[0.2em] text-cyan-300">Follow</p>
+					<h2 class="mt-3 text-2xl font-bold">Follow</h2>
+					<ul class="mt-4 space-y-3 text-slate-200">
+						<li>
+							<a href="https://www.facebook.com/rebootmusicofficial" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 transition hover:text-cyan-300">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" style="color: #1877f2" fill="currentColor" aria-hidden="true">
+									<path d="M13.5 21v-8h2.5l.5-3h-3V8.2c0-.9.3-1.5 1.6-1.5H17V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H8v3h2.3v8h3.2z" />
+								</svg>
+								<span>Facebook</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/re_bootofficial" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 transition hover:text-cyan-300">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" style="color: #e4405f" fill="currentColor" aria-hidden="true">
+									<path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1112 18.5 5.5 5.5 0 0112 7.5zm0 2A3.5 3.5 0 1012 17a3.5 3.5 0 000-7zm5.8-2.3a1.3 1.3 0 11-2.6 0 1.3 1.3 0 012.6 0z" />
+								</svg>
+								<span>Instagram</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://open.spotify.com/artist/1HBB7Pn85JrPzx4PwRWIWH?si=uufzdLelQi-5JdavlYR2_Q" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 transition hover:text-cyan-300">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" style="color: #1db954" fill="currentColor" aria-hidden="true">
+									<path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.6 14.5c-.2.4-.7.5-1.1.3-3-1.8-6.8-2.2-11.2-1.2-.4.1-.8-.2-.9-.6-.1-.4.2-.8.6-.9 4.8-1.1 9.1-.6 12.4 1.4.3.2.4.7.2 1zM18 13c-.3.5-.9.7-1.4.4-3.4-2.1-8.5-2.7-12.5-1.5-.6.2-1.2-.2-1.4-.8-.2-.6.2-1.2.8-1.4 4.6-1.4 10.3-.7 14.3 1.8.5.3.7 1 .2 1.5zm.1-3.7C14 6.8 7.2 6.6 3.3 7.8c-.7.2-1.4-.2-1.6-.9-.2-.7.2-1.4.9-1.6 4.6-1.4 12.2-1.1 16.8 1.6.6.4.8 1.2.4 1.8-.4.6-1.2.8-1.7.4z" />
+								</svg>
+								<span>Spotify</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://music.apple.com/za/artist/re-boot/1548562479" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 transition hover:text-cyan-300">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" style="color: #fa243c" fill="currentColor" aria-hidden="true">
+									<path d="M16.4 12.8c0-2 1.6-3 1.7-3.1-1-.9-2.5-1-3-1-1.3-.1-2.4.7-3 .7-.7 0-1.7-.7-2.8-.7-1.5 0-2.8.8-3.6 2.1-1.6 2.7-.4 6.6 1.1 8.7.7 1 1.6 2.1 2.8 2 .9 0 1.3-.6 2.5-.6s1.5.6 2.5.5c1-.1 1.7-1 2.4-2 .8-1.2 1.2-2.4 1.2-2.5 0 0-2-.8-2-4.1zM14 7.6c.6-.7 1.1-1.6 1-2.6-.9.1-1.9.6-2.5 1.3-.6.6-1.1 1.6-.9 2.5.9.1 1.8-.4 2.4-1.2z" />
+								</svg>
+								<span>Apple Music</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/@reboot-music" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 transition hover:text-cyan-300">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" style="color: #ff0000" fill="currentColor" aria-hidden="true">
+									<path d="M23.5 7.1a3 3 0 00-2.1-2.1C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.4.5A3 3 0 00.5 7.1 31.7 31.7 0 000 12a31.7 31.7 0 00.5 4.9 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.7 31.7 0 0024 12a31.7 31.7 0 00-.5-4.9zM9.6 15.5v-7L16 12l-6.4 3.5z" />
+								</svg>
+								<span>YouTube</span>
+							</a>
+						</li>
+					</ul>
+				</article>
+				<article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+					<p class="text-xs uppercase tracking-[0.2em] text-cyan-300">Contact</p>
+					<h2 class="mt-3 text-2xl font-bold">Contact</h2>
+					<ul class="mt-4 space-y-3 text-slate-200">
+						<li>
+							<a href="mailto:contact@re-bootmusic.com" class="inline-flex items-center gap-3 transition hover:text-cyan-300">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 text-sky-300" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5A2.5 2.5 0 015.5 5h13A2.5 2.5 0 0121 7.5v9a2.5 2.5 0 01-2.5 2.5h-13A2.5 2.5 0 013 16.5v-9z" />
+									<path stroke-linecap="round" stroke-linejoin="round" d="M4 7l8 6 8-6" />
+								</svg>
+								<span>MGMT: General Inquiries</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:justin@sevenrosesgroup.com" class="inline-flex items-center gap-3 transition hover:text-cyan-300">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 text-sky-300" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5A2.5 2.5 0 015.5 5h13A2.5 2.5 0 0121 7.5v9a2.5 2.5 0 01-2.5 2.5h-13A2.5 2.5 0 013 16.5v-9z" />
+									<path stroke-linecap="round" stroke-linejoin="round" d="M4 7l8 6 8-6" />
+								</svg>
+								<span>BOOKINGS: Available Worldwide</span>
+							</a>
+						</li>
+					</ul>
+				</article>
+			</section>
+		</main>
+		<footer class="border-t border-slate-800 bg-slate-950/80">
+			<div class="mx-auto w-full max-w-6xl px-6 py-6 text-center text-sm text-slate-400">
+				Copyright 2020 Adrian Armendariz. All rights reserved.
+			</div>
+		</footer>
+		<script src="app.js"></script>
+	</body>
+</html>
