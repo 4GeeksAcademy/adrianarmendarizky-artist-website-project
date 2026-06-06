@@ -5,13 +5,79 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>re:boot | Artist Website</title>
 		<link rel="stylesheet" href="styles.css" />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "MusicGroup",
+						"@id": "https://re-bootmusic.com/#musicgroup",
+						"name": "re:boot",
+						"alternateName": "reboot",
+						"url": "https://re-bootmusic.com/",
+						"genre": ["techno", "melodic techno", "progressive trance", "EDM", "mainstage", "warehouse"],
+						"member": [
+							{ "@type": "Person", "name": "Adrian Armendariz" },
+							{ "@type": "Person", "name": "Nikhil Prakash" }
+						],
+						"recordLabel": [
+							{ "@type": "Organization", "name": "Create Music Group" },
+							{ "@type": "Organization", "name": "Anjunabeats" },
+							{ "@type": "Organization", "name": "A State Of Trance" },
+							{ "@type": "Organization", "name": "Fe Chrome" }
+						],
+						"address": {
+							"@type": "PostalAddress",
+							"addressCountry": "US",
+							"addressLocality": "Los Angeles and Chicago"
+						},
+						"sameAs": [
+							"https://www.facebook.com/rebootmusicofficial",
+							"https://www.instagram.com/re_bootofficial",
+							"https://open.spotify.com/artist/1HBB7Pn85JrPzx4PwRWIWH",
+							"https://music.apple.com/za/artist/re-boot/1548562479",
+							"https://www.youtube.com/@reboot-music"
+						],
+						"contactPoint": [
+							{
+								"@type": "ContactPoint",
+								"contactType": "management",
+								"email": "contact@re-bootmusic.com"
+							},
+							{
+								"@type": "ContactPoint",
+								"contactType": "bookings",
+								"email": "justin@sevenrosesgroup.com"
+							}
+						]
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://re-bootmusic.com/#website",
+						"url": "https://re-bootmusic.com/",
+						"name": "re:boot Official Website",
+						"publisher": { "@id": "https://re-bootmusic.com/#musicgroup" },
+						"inLanguage": "en-US"
+					},
+					{
+						"@type": "WebPage",
+						"@id": "https://re-bootmusic.com/index.html#webpage",
+						"url": "https://re-bootmusic.com/index.html",
+						"name": "re:boot | Artist Website",
+						"isPartOf": { "@id": "https://re-bootmusic.com/#website" },
+						"about": { "@id": "https://re-bootmusic.com/#musicgroup" },
+						"inLanguage": "en-US"
+					}
+				]
+			}
+		</script>
 	</head>
 	<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
 		<header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
 			<nav class="mx-auto w-full max-w-6xl px-6 py-5">
 				<div class="flex items-center justify-between">
 					<a href="index.html" class="flex items-center">
-						<img src="Site%20Assets/reboot%20logo%20-02.png" alt="re:boot logo" class="h-10 w-auto" />
+						<img src="Site%20Assets/reboot%20logo%20-02.png" alt="re:boot artist logo" class="h-10 w-auto" />
 					</a>
 					<button
 						type="button"
@@ -49,7 +115,7 @@
 					<div class="hero-image-glow w-full md:w-7/12">
 						<img
 							src="Site%20Assets/reboot_1.jpg"
-							alt="re:boot promotional visual"
+							alt="re:boot promotional portrait with dramatic stage lighting"
 							class="hero-image-blend h-auto max-h-[72vh] w-full object-cover"
 						/>
 					</div>
